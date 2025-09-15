@@ -1,0 +1,23 @@
+html,
+body,
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+    width: 90vw;
+    background-color: green;
+    margin: 25px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 22%;
+    height: 500px;
+    background-color: blue;
+    margin: 20px 0;
+}
