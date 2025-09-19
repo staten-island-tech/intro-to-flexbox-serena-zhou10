@@ -38,7 +38,7 @@ body {
 .title__website {
   font-size: 10rem;
   background-color: #9f9b99;
-  margin: 40rem auto;
+  margin: 45rem auto;
   text-align: center;
   font-weight: bold;
 }
@@ -76,7 +76,8 @@ body {
 }
 
 .img {
-  border-radius: 1rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
   width: 100%;
   height: 30rem;
   object-fit: cover;
