@@ -161,8 +161,17 @@ const hironos = [
   },
 ];
 
-hironos.forEach((hirono) => makeCard(hirono));
-function makeCard(item) {
+//create inject function
+function inject(item) {
+  //do something
+  const container = document.querySelector(".container");
+  container.insertAdjacentHTML("afterbegin", `<h1>${item.name}</h1>`);
   //get container query
-  //put card on screen
+  //using adjacent html, push card into container
 }
+// products.forEach((product) => inject(product))
+inject(products[0]);
+inject(products[0]);
+inject(products[0]);
+inject(products[0]);
+  //loop through items
