@@ -165,13 +165,40 @@ const hironos = [
 function inject(item) {
   //do something
   const container = document.querySelector(".container");
-  container.insertAdjacentHTML("afterbegin", `<h1>${item.name}</h1>`);
+  container.insertAdjacentHTML(
+    "afterbegin",
+    `<img class="img"
+                src="https://prod-america-res.popmart.com/default/20240711_142219_014105____hirono-shelter-series-figures-blind-boxes-pop-mart-us-scene_1_____1200x1200.jpg"
+                alt="Hirono Shelter Series Figure Set" />
+            <h2 class="product__category">Hirono Figure Blind Box</h2>
+            <h3 class="product__name">Shelter Series Figures (set)</h3>
+            <p class="product__price">$239.88</p>
+            <button class="purchase__product">Add to Cart</button>
+        </div>`
+  );
   //get container query
   //using adjacent html, push card into container
 }
-// products.forEach((product) => inject(product))
-inject(products[0]);
-inject(products[0]);
-inject(products[0]);
-inject(products[0]);
-  //loop through items
+hironos.forEach((product) => inject(product));
+
+//loop through items
+
+function addtoCart() {
+  const buttons = document.querySelectorAll("button");
+  //create array if we need more than forEach
+  const btnArray = Array.from(buttons);
+  //console.log(buttons);
+  btnArray.forEach((btn) =>
+    btn.addEventListener("click", function (event) {
+      console.log(event.target.textContent);
+      console.log(
+        event.target.closest(".display-card").getAttribute("data-title")
+      );
+    })
+  );
+}
+addtoCart();
+
+//made an array
+//using for each to put array of cards on screen
+//work on add to card
