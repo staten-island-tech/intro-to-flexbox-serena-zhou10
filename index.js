@@ -167,6 +167,13 @@ function inject(item) {
   const container = document.querySelector(".container");
   container.insertAdjacentHTML(
     "afterbegin",
+     <img src>${img}</img>;
+     <h2>${hironos.brand}</h2>;
+     <h3>${hironos.name}</h3>;
+     <p>${hironos.price}</p>;
+     <button>${hironos.inStock}</button>
+  
+
     `<img class="img"
                 src="https://prod-america-res.popmart.com/default/20240711_142219_014105____hirono-shelter-series-figures-blind-boxes-pop-mart-us-scene_1_____1200x1200.jpg"
                 alt="Hirono Shelter Series Figure Set" />
@@ -176,6 +183,7 @@ function inject(item) {
             <button class="purchase__product">Add to Cart</button>
         </div>`
   );
+  
   //get container query
   //using adjacent html, push card into container
 }
