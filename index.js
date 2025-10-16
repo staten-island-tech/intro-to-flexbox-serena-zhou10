@@ -162,35 +162,17 @@ const hironos = [
 ];
 
 //create inject function
-function inject(item) {
+function inject(hironos) {
   //do something
   const container = document.querySelector(".container");
-  container.insertAdjacentHTML(
-   "afterbegin",
-     <img src>${img}</img>;
-     <h2>${hironos.brand}</h2>;
-     <h3>${hironos.name}</h3>;
-     <p>${hironos.price}</p>;
-     <button>${hironos.inStock}</button>
-
-  )
-    "afterbegin",
-     <img src>${img}</img>;
-     <h2>${hironos.brand}</h2>;
-     <h3>${hironos.name}</h3>;
-     <p>${hironos.price}</p>;
-     <button>${hironos.inStock}</button>
-  
-
-    `<img class="img"
-                src="https://prod-america-res.popmart.com/default/20240711_142219_014105____hirono-shelter-series-figures-blind-boxes-pop-mart-us-scene_1_____1200x1200.jpg"
-                alt="Hirono Shelter Series Figure Set" />
-            <h2 class="product__category">Hirono Figure Blind Box</h2>
-            <h3 class="product__name">Shelter Series Figures (set)</h3>
-            <p class="product__price">$239.88</p>
-            <button class="purchase__product">Add to Cart</button>
-        </div>`
-  ;
+  container.insertAdjacentHTML("afterbegin",`<div class ="card">
+     <img src=${hironos.img} alt = ${hironos.alt} />
+     <h2>${hironos.brand}</h2>
+     <h3>${hironos.name}</h3>
+     <p>$${hironos.price}</p>
+     <button>Purchase</button>
+     </div>`
+  );
   
   //get container query
   //using adjacent html, push card into container
