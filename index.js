@@ -166,6 +166,14 @@ function inject(item) {
   //do something
   const container = document.querySelector(".container");
   container.insertAdjacentHTML(
+   "afterbegin",
+     <img src>${img}</img>;
+     <h2>${hironos.brand}</h2>;
+     <h3>${hironos.name}</h3>;
+     <p>${hironos.price}</p>;
+     <button>${hironos.inStock}</button>
+
+  )
     "afterbegin",
      <img src>${img}</img>;
      <h2>${hironos.brand}</h2>;
@@ -182,7 +190,7 @@ function inject(item) {
             <p class="product__price">$239.88</p>
             <button class="purchase__product">Add to Cart</button>
         </div>`
-  );
+  ;
   
   //get container query
   //using adjacent html, push card into container
