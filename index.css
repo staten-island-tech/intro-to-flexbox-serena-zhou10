@@ -35,7 +35,7 @@ body {
 }
 
 /*product text*/
-.title__website {
+h1 {
   font-size: 10rem;
   background-color: #9f9b99;
   margin: 45rem auto;
@@ -43,26 +43,26 @@ body {
   font-weight: bold;
 }
 
-.product__category {
+h2 {
   font-size: 1rem;
   padding: 10px;
   line-height: 1rem;
 }
 
-.product__name {
+h3 {
   font-size: 2rem;
   padding: 10px;
   line-height: 2rem;
   font-weight: medium;
 }
 
-.product__price {
+p {
   font-size: 1.5rem;
   padding: 10px;
   line-height: 1rem;
 }
 
-.purchase__product {
+button {
   font-size: 1.5rem;
   background-color: #2e2c2b;
   font-family: "Montserrat", sans-serif;
@@ -76,7 +76,7 @@ body {
   border-radius: 0.5rem;
 }
 
-.img {
+.card img {
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   width: 100%;
