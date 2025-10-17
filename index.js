@@ -165,7 +165,7 @@ const hironos = [
 function inject(hironos) {
   //do something
   const container = document.querySelector(".container");
-  container.insertAdjacentHTML("afterbegin",`<div class ="card">
+  container.insertAdjacentHTML("beforeend", `<div class ="card">
      <img src=${hironos.img} alt = ${hironos.alt} />
      <h2>${hironos.brand}</h2>
      <h3>${hironos.name}</h3>
@@ -177,7 +177,7 @@ function inject(hironos) {
   //get container query
   //using adjacent html, push card into container
 }
-hironos.forEach((product) => inject(product));
+hironos.forEach((hironos) => inject(hironos));
 
 //loop through items
 
@@ -196,6 +196,8 @@ function addtoCart() {
   );
 }
 addtoCart();
+
+  //get container
 
 //made an array
 //using for each to put array of cards on screen

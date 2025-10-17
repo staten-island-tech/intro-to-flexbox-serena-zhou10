@@ -34,6 +34,15 @@ body {
   box-shadow: 0 1px 4px #645c56;
 }
 
+.cart  {
+  width: 22%;
+  height: 450px;
+  background-color: #000000;
+  margin: 20px 0; 
+  float: right; 
+  align-items: center;
+}
+
 /*product text*/
 h1 {
   font-size: 10rem;
