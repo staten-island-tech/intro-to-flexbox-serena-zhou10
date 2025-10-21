@@ -35,12 +35,12 @@ body {
 }
 
 .cart  {
-  width: 22%;
-  height: 450px;
-  background-color: #000000;
-  margin: 20px 0; 
-  float: right; 
-  align-items: center;
+  width: 400px;
+  height: auto;
+  background-color: #9f9b99;
+  margin: 20px auto; 
+  display: flex;
+  flex-direction: column;
 }
 
 /*product text*/

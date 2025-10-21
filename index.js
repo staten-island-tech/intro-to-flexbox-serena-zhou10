@@ -165,12 +165,12 @@ const hironos = [
 function inject(hironos) {
   //do something
   const container = document.querySelector(".container");
-  container.insertAdjacentHTML("beforeend", `<div class ="card">
+  container.insertAdjacentHTML("beforeend", `<div class = "card">
      <img src=${hironos.img} alt = ${hironos.alt} />
      <h2>${hironos.brand}</h2>
      <h3>${hironos.name}</h3>
      <p>$${hironos.price}</p>
-     <button>Purchase</button>
+     <button>Add to Cart</button>
      </div>`
   );
   
@@ -194,7 +194,8 @@ function addtoCart() {
       );
     })
   );
-}
+};
+
 addtoCart();
 
   //get container
