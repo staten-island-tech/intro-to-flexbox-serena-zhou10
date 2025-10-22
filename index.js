@@ -161,55 +161,122 @@ const hironos = [
   },
 ];
 
-//create inject function
+let cart = [];
+
+
 function inject(hironos) {
-  //do something
   const container = document.querySelector(".container");
   container.insertAdjacentHTML("beforeend", `<div class = "card">
-     <img src=${hironos.img} alt = ${hironos.alt} />
+     <img src="${hironos.img}" alt = "${hironos.alt}"/>
      <h2>${hironos.brand}</h2>
      <h3>${hironos.name}</h3>
      <p>$${hironos.price}</p>
      <button>Add to Cart</button>
      </div>`
   );
-  
-  //get container query
-  //using adjacent html, push card into container
 }
-hironos.forEach((hironos) => inject(hironos));
 
-//loop through items
+hironos.forEach((h) => inject(h));
 
 function addtoCart() {
-  const buttons = document.querySelectorAll("button");
-  //create array if we need more than forEach
+  const buttons = document.querySelectorAll(".cart button");
   const btnArray = Array.from(buttons);
-  //console.log(buttons);
+
   btnArray.forEach((btn) =>
     btn.addEventListener("click", function (event) {
-      console.log(event.target.textContent);
-      console.log(
-        event.target.closest(".display-card").querySelector(`hironos.name`, `hironos.price`)
-      );
+      const card = event.target.closest(".card");
+      const name = card.querySelector("h3").textContent;
+      const priceText = card.querySelector("p").textContent.replace("$", "");
+      const price = parseFloat(priceText);
+      const imgSrc = card.querySelector("img").src;
+
+      const item = { name, price, imgSrc, quantity: 1 };
+
+      const existing = cart.find((product) => product.name === name);
+      if (existing) {
+        existing.quantity += 1;
+      } else {
+        cart.push(item);
+      }
+      displayCart();
     })
   );
 };
-
 addtoCart();
 
-  //get container
+function displayCart() {
+  const cartContainer = document.querySelector(".cart__items");
+  const cartPrice = document.querySelector(".cart-total");
 
-//made an array
-//using for each to put array of cards on screen
-//work on add to card
+  cartContainer.innerHTML = "";
 
-/*function filterByGenre (genre) {
-  const cards = document.querySelectorAll(".book-card");
-  if (genre === cardCategory){
-    card.style.display = ""; //contextual
+  let subtotal = 0;
+
+  cart.forEach((item) => {
+    const itemTotal = item.price * item.quantity;
+    subtotal += itemTotal;
+
+    cartContainer.insertAdjacentHTML(
+      "beforeend",
+      `
+      <div class="cart__item">
+        <img src="${item.imgSrc}" alt="${item.name}"
+             style="width:50px; height:50px; border-radius:5px; margin-right:10px;">
+        <span>${item.name}</span>
+        <span>Qty: ${item.quantity}</span>
+        <span>$${itemTotal.toFixed(2)}</span>
+      </div>
+      `
+    );
+  });
+
+
+
+  cartPrice.innerHTML = `<h2 class="product__price">Subtotal: $${subtotal.toFixed(2)}</h2>`;
+
+  document.querySelector(".cart").style.display = "block";
+}
+
+function addItemToCart(item) {
+  const existingItem = cart.find(cartItem => cartItem.name === item.name);
+
+  if (existingItem) {
+    existingItem.quantity += 1;
   } else {
-    card.style.display = "none";
+    cart.push({ ...item, quantity: 1 });
   }
-};
-filterByGenre*/
+
+  displayCart();
+}
+
+function displayCart() {
+  const cartContainer = document.querySelector(".cart__items");
+  const totalDisplay = document.getElementById("cart-total");
+
+  cartContainer.innerHTML = "";
+
+  let subtotal = 0;
+
+  cart.forEach(item => {
+    const itemTotal = item.price * item.quantity;
+    subtotal += itemTotal;
+
+    cartContainer.insertAdjacentHTML("beforeend", `
+      <div class="cart__item">
+        <p><strong>${item.name}</strong></p>
+        <p>Qty: ${item.quantity}</p>
+        <p>$${itemTotal.toFixed(2)}</p>
+      </div>
+    `);
+  });
+
+  totalDisplay.textContent = subtotal.toFixed(2);
+}
+
+function showCart() {
+  document.querySelector(".cart").classList.remove("hidden");
+}
+
+hironos.forEach(h => inject(h));
+
+addToCart();

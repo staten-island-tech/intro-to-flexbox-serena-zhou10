@@ -14,7 +14,7 @@
 </head>
 
 <body>
-<div class="title">
+    <div class="title">
         <h1 class="title__website">hirono</h1>
     </div>
 
@@ -216,16 +216,25 @@
         </div> -->
     </div>
 
-        <div class = "cart">
-            <h3 class="product__name">Your Cart</h2>
+    <!-- <div class="cart">
+        <h3 class="product__name">Your Cart</h2>
+    </div>
+    <div class="cart__container">
+        <p class="product__price">Product</p>
+    </div>
+    <div class="cart__price">
+        <h2 class="product__price">Subtotal</h2>
+    </div> -->
+
+    <div class="cart hidden">
+        <h3>Your Cart</h2>
+        <div class="cart__items"></div>
+        <div class="cart__total">
+            <strong>Subtotal:</strong> $<span id="cart-total">0.00</span>
         </div>
-        <div class = "cart__container">
-            <p class ="product__price">Product</p>
-        </div>
-        <div class = "cart__price">
-            <h2 class ="product__price">Subtotal</h2>
-        </div>
-        
+    </div>
+
+
     <script src="index.js"></script>
 </body>
 

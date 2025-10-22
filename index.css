@@ -34,7 +34,7 @@ body {
   box-shadow: 0 1px 4px #645c56;
 }
 
-.cart  {
+/*.cart  {
   width: 600px;
   height: auto;
   background-color: #9f9b99;
@@ -61,6 +61,32 @@ body {
   flex-direction: column;
   border-radius: 5px;
 }
+  */
+
+.cart {
+  background-color: #928f8d;
+  width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 1px 4px #645c56;
+}
+
+.cart__item {
+  border-bottom: 1px solid #645c56;
+  padding: 10px 0;
+}
+
+.cart__total {
+  margin-top: 15px;
+  font-size: 1.6rem;
+  text-align: right;
+}
+
+.hidden {
+  display: none;
+}
+
 
 /*product text*/
 h1 {
