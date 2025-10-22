@@ -190,7 +190,7 @@ function addtoCart() {
     btn.addEventListener("click", function (event) {
       console.log(event.target.textContent);
       console.log(
-        event.target.closest(".display-card").getAttribute("data-title")
+        event.target.closest(".display-card").querySelector(`hironos.name`, `hironos.price`)
       );
     })
   );
@@ -203,3 +203,13 @@ addtoCart();
 //made an array
 //using for each to put array of cards on screen
 //work on add to card
+
+/*function filterByGenre (genre) {
+  const cards = document.querySelectorAll(".book-card");
+  if (genre === cardCategory){
+    card.style.display = ""; //contextual
+  } else {
+    card.style.display = "none";
+  }
+};
+filterByGenre*/
