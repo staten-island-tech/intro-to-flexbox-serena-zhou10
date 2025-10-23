@@ -163,15 +163,14 @@ const hironos = [
 
 let cart = [];
 
-
 function inject(hironos) {
   const container = document.querySelector(".container");
   container.insertAdjacentHTML("beforeend", `<div class = "card">
-     <img src="${hironos.img}" alt = "${hironos.alt}"/>
+     <img src=${hironos.img} alt = ${hironos.alt} />
      <h2>${hironos.brand}</h2>
      <h3>${hironos.name}</h3>
      <p>$${hironos.price}</p>
-     <button>Add to Cart</button>
+     <button class="cart_button">Add to Cart</button>
      </div>`
   );
 }
@@ -179,7 +178,7 @@ function inject(hironos) {
 hironos.forEach((h) => inject(h));
 
 function addtoCart() {
-  const buttons = document.querySelectorAll(".cart button");
+  const buttons = document.querySelectorAll(".cart_button");
   const btnArray = Array.from(buttons);
 
   btnArray.forEach((btn) =>
@@ -199,84 +198,44 @@ function addtoCart() {
         cart.push(item);
       }
       displayCart();
+      showCart();
     })
   );
 };
+
 addtoCart();
 
-function displayCart() {
-  const cartContainer = document.querySelector(".cart__items");
-  const cartPrice = document.querySelector(".cart-total");
-
-  cartContainer.innerHTML = "";
-
-  let subtotal = 0;
-
-  cart.forEach((item) => {
-    const itemTotal = item.price * item.quantity;
-    subtotal += itemTotal;
-
-    cartContainer.insertAdjacentHTML(
-      "beforeend",
-      `
-      <div class="cart__item">
-        <img src="${item.imgSrc}" alt="${item.name}"
-             style="width:50px; height:50px; border-radius:5px; margin-right:10px;">
-        <span>${item.name}</span>
-        <span>Qty: ${item.quantity}</span>
-        <span>$${itemTotal.toFixed(2)}</span>
-      </div>
-      `
-    );
-  });
-
-
-
-  cartPrice.innerHTML = `<h2 class="product__price">Subtotal: $${subtotal.toFixed(2)}</h2>`;
-
-  document.querySelector(".cart").style.display = "block";
-}
-
-function addItemToCart(item) {
-  const existingItem = cart.find(cartItem => cartItem.name === item.name);
-
-  if (existingItem) {
-    existingItem.quantity += 1;
-  } else {
-    cart.push({ ...item, quantity: 1 });
-  }
-
-  displayCart();
-}
+displayCart();
 
 function displayCart() {
   const cartContainer = document.querySelector(".cart__items");
   const totalDisplay = document.getElementById("cart-total");
+  const itemCount = document.getElementById("item-count");
 
   cartContainer.innerHTML = "";
 
   let subtotal = 0;
+  let totalItems = 0;
 
   cart.forEach(item => {
     const itemTotal = item.price * item.quantity;
     subtotal += itemTotal;
+    totalItems += item.quantity;
 
     cartContainer.insertAdjacentHTML("beforeend", `
       <div class="cart__item">
         <p><strong>${item.name}</strong></p>
         <p>Qty: ${item.quantity}</p>
-        <p>$${itemTotal.toFixed(2)}</p>
+        <h3>$${item.price.toFixed(2)}</h3>
       </div>
     `);
   });
 
   totalDisplay.textContent = subtotal.toFixed(2);
+  itemCount.textContent = `${totalItems} ${totalItems === 1 ? "Item" : "Items"}`;
+
 }
 
 function showCart() {
   document.querySelector(".cart").classList.remove("hidden");
 }
-
-hironos.forEach(h => inject(h));
-
-addToCart();

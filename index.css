@@ -34,46 +34,16 @@ body {
   box-shadow: 0 1px 4px #645c56;
 }
 
-/*.cart  {
-  width: 600px;
-  height: auto;
-  background-color: #9f9b99;
-  margin: 20px auto; 
-  display: flex;
-  flex-direction: column;
-}
-
-.cart__container {
-  width: 550px;
-  height: auto;
-  background-color: #9f9b99;
-  margin: 20px auto; 
-  display: flex;
-  flex-direction: column;
-}
-
-.cart__price {
-  width: 550px;
-  height: auto;
-  background-color: #94908e;
-  margin: 20px auto; 
-  display: flex;
-  flex-direction: column;
-  border-radius: 5px;
-}
-  */
-
 .cart {
-  background-color: #928f8d;
+  background-color: #9f9b99;
   width: 400px;
-  margin: 2rem auto;
-  padding: 2rem;
+  margin: 3rem auto;
   border-radius: 1rem;
-  box-shadow: 0 1px 4px #645c56;
+  color: #2e2c2b;
 }
 
 .cart__item {
-  border-bottom: 1px solid #645c56;
+  border-bottom: 1px solid #ffffff;
   padding: 10px 0;
 }
 
@@ -85,6 +55,86 @@ body {
 
 .hidden {
   display: none;
+}
+
+.cart__header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.cart__title {
+  font-size: 2rem;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.cart__badge {
+  background-color: #2e2c2b;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.4rem 1rem;
+  border-radius: 9999px;
+}
+
+/* Product + Price header */
+.cart__header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  color: #444;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+
+.cart__items {
+  margin-top: 1rem;
+}
+
+/* Individual cart item */
+.cart__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 1rem 0;
+}
+
+.cart__item p,
+.cart__item h3 {
+  margin: 0;
+  color: #2e2c2b;
+}
+
+/* Subtotal box */
+.cart__summary {
+  background-color: #f7f7fa;
+  border-radius: 0.8rem;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.subtotal-label {
+  font-size: 1.6rem;
+  color: #2e2c2b;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.subtotal-amount {
+  font-size: 4.5rem;
+  font-weight: 800;
+  color: #111;
+  text-align: center;
+  margin: 0;
+}
+
+.tax-note {
+  font-size: 1.2rem;
+  color: #777;
+  margin-top: 0.8rem;
 }
 
 
@@ -109,6 +159,13 @@ h3 {
   padding: 10px;
   line-height: 2rem;
   font-weight: medium;
+}
+
+h4 {
+  font-size: 8rem;
+  margin: 45rem auto;
+  text-align: center;
+  font-weight: bold;
 }
 
 p {
@@ -138,6 +195,8 @@ button {
   height: 30rem;
   object-fit: cover;
 }
+
+
 
 @media screen and (max-width: 800px) {
   .card {
