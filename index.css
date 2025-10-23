@@ -36,7 +36,7 @@ body {
 
 .cart {
   background-color: #9f9b99;
-  width: 400px;
+  width: 450px;
   margin: 3rem auto;
   border-radius: 1rem;
   color: #2e2c2b;
@@ -47,10 +47,12 @@ body {
   padding: 10px 0;
 }
 
-.cart__total {
-  margin-top: 15px;
-  font-size: 1.6rem;
-  text-align: right;
+#cart-total {
+  font-size: 4.5rem;
+  font-weight: 800;
+  color: #111;
+  text-align: center;
+  margin: 0;
 }
 
 .hidden {
@@ -79,7 +81,7 @@ body {
   border-radius: 9999px;
 }
 
-/* Product + Price header */
+/*product + price header*/
 .cart__header {
   display: flex;
   justify-content: space-between;
@@ -93,7 +95,7 @@ body {
   margin-top: 1rem;
 }
 
-/* Individual cart item */
+/*individual cart item*/
 .cart__item {
   display: flex;
   justify-content: space-between;
@@ -108,7 +110,7 @@ body {
   color: #2e2c2b;
 }
 
-/* Subtotal box */
+/*subtotal box*/
 .cart__summary {
   background-color: #f7f7fa;
   border-radius: 0.8rem;
@@ -166,6 +168,16 @@ h4 {
   margin: 45rem auto;
   text-align: center;
   font-weight: bold;
+}
+
+h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h6 {
+  font-size: 1 rem;
+  font-weight: 200;
 }
 
 p {

@@ -3,7 +3,7 @@ const hironos = [
     name: "Shelter Series Figures (set)",
     price: 239.88,
     inStock: true,
-    brand: "Hirono",
+    brand: "Hirono Figure Blind Box",
     img: "https://prod-america-res.popmart.com/default/20240711_142219_014105____hirono-shelter-series-figures-blind-boxes-pop-mart-us-scene_1_____1200x1200.jpg",
     alt: "Hirono Shelter Series Figure Set",
   },
@@ -11,7 +11,7 @@ const hironos = [
     name: "Reshape Series Figures (set)",
     price: 179.91,
     inStock: true,
-    brand: "Hirono",
+    brand: "Hirono Figure Blind Box",
     img: "https://prod-america-res.popmart.com/default/20231222_173158_703446__1200x1200.jpg",
     alt: "Hirono Reshape Series Figures Set",
   },
@@ -19,7 +19,7 @@ const hironos = [
     name: "Echo Series (set)",
     price: 239.88,
     inStock: true,
-    brand: "Hirono",
+    brand: "Hirono Figure Blind Box",
     img: "https://prod-america-res.popmart.com/default/20250403_151942_038282____scene_hirono-echo-series-figures_blind-boxes_details_popmart-us_____1200x1200.jpg",
     alt: "Hirono Echo Series Figures Set",
   },
@@ -27,7 +27,7 @@ const hironos = [
     name: "Mime Series (set)",
     price: 239.88,
     inStock: true,
-    brand: "Hirono",
+    brand: "Hirono Figure Blind Box",
     img: "https://prod-america-res.popmart.com/default/20250722_141750_244488____scene_hirono-mime-series-figures_blind-boxes_details_pop-mart-us_____1200x1200.jpg",
     alt: "Hirono Mime Series Figures Set",
   },
@@ -35,7 +35,7 @@ const hironos = [
     name: "Hirono × CLOT Series Figures (gift box)",
     price: 134.99,
     inStock: false,
-    brand: "Hirono",
+    brand: "Hirono Gift Box",
     img: "https://prod-america-res.popmart.com/default/20241206_143522_759524____scene_hirono-clot-series-figures-gift-box-edition-_gift-box_details_popmart-us_____1200x1200.jpg",
     alt: "Hirono × CLOT Series Figures (Gift Box Edition)",
   },
@@ -43,7 +43,7 @@ const hironos = [
     name: "Echo Fridge Magnet Clip Blind Box (set)",
     price: 89.94,
     inStock: false,
-    brand: "Hirono",
+    brand: "Hirono Fridge Magnet Blind Box",
     img: "https://prod-america-res.popmart.com/default/20250403_154013_961838____scene_hirono-echo-series-fridge-magnet-clip-blind-box_fridge-magnet-clip_accessories_details_popmart-us_____1200x1200.jpg",
     alt: "Hirono Echo Series - Pendant Chain Blind Box",
   },
@@ -51,7 +51,7 @@ const hironos = [
     name: "The Pianist Figure",
     price: 53.99,
     inStock: false,
-    brand: "Hirono",
+    brand: "Hirono Figure",
     img: "https://prod-america-res.popmart.com/default/20250523_172227_605184____2_hirono-the-pianist-figure_figurine_details_popmart-us_____1200x1200.jpg",
     alt: "Hirono The Pianist Figure",
   },
@@ -59,7 +59,7 @@ const hironos = [
     name: "Doll Panda Figure",
     price: 37.99,
     inStock: false,
-    brand: "Hirono",
+    brand: "Hirono Figure",
     img: "https://prod-america-res.popmart.com/default/20241018_092745_949626____scene-2_____1200x1200.jpg",
     alt: "Hirono Doll Panda Figure",
   },
@@ -67,7 +67,7 @@ const hironos = [
     name: "Ceramic Feather Figurine",
     price: 156.99,
     inStock: true,
-    brand: "Hirono",
+    brand: "Hirono Figure",
     img: "https://prod-america-res.popmart.com/default/20241213_113435_266035____scene_1_hirono-ceramic-feather-figurine_figurine_details_popmart-us_____1200x1200.jpg",
     alt: "Hirono Ceramic Feather Figurine",
   },
@@ -75,7 +75,7 @@ const hironos = [
     name: "Hirono x Snoopy Figure",
     price: 43.99,
     inStock: true,
-    brand: "Hirono",
+    brand: "Hirono Figure",
     img: "https://prod-america-res.popmart.com/default/20250403_161125_866367____scene_1_hirono-x-snoopy-figure_figurine_details_pop-mart-us_____1200x1200.jpg",
     alt: "Hirono x Snoopy Figure",
   },
@@ -83,7 +83,7 @@ const hironos = [
     name: "Living Wild-Fight for Joy Plush Doll",
     price: 50.99,
     inStock: true,
-    brand: "Hirono",
+    brand: "Hirono Plush",
     img: "https://prod-america-res.popmart.com/default/20250620_181624_653153____2_hirono-living-wild-fight-for-joy-plush-doll_plush-toys_-details_popmart-us_____1200x1200.jpg",
     alt: "Hirono Living Wild-Fight for Joy Plush Doll",
   },
@@ -91,7 +91,7 @@ const hironos = [
     name: "Echo Series - 3D Ceramic Cup",
     price: 44.99,
     inStock: true,
-    brand: "Hirono",
+    brand: "Hirono Cup",
     img: "https://prod-america-res.popmart.com/default/20250403_154235_851285____scene_1_-hirono-echo-series-3d-ceramic-cup_accessories_details_popmart-us_____1200x1200.jpg",
     alt: "Hirono Echo Series - 3D Ceramic Cup",
   },
@@ -99,7 +99,7 @@ const hironos = [
     name: "Echo Series - 2 in 1 Cable Blind Box",
     price: 119.94,
     inStock: true,
-    brand: "Hirono",
+    brand: "Hirono Cables Blind Box",
     img: "https://prod-america-res.popmart.com/default/20250403_154729_120465____scene_-hirono-echo-series-2-in-1-cable-blind-box_blind-boxes_details_popmart-us_____1200x1200.jpg",
     alt: "Hirono Echo Series Cables Blind Box",
   },
@@ -107,7 +107,7 @@ const hironos = [
     name: "Echo Series - Mini Bag Blind Box",
     price: 125.94,
     inStock: true,
-    brand: "Hirono",
+    brand: "Hirono Mini Bag Blind Box",
     img: "https://prod-america-res.popmart.com/default/20250403_155436_709486____scene-hirono-echo-series-mini-bag-blind-box_blind-boxes_details_popmart-us_____1200x1200.jpg",
     alt: "Hirono Echo Series Mini Bag Box",
   },
@@ -115,7 +115,7 @@ const hironos = [
     name: "Echo Series - Table Lamp",
     price: 73.99,
     inStock: true,
-    brand: "Hirono",
+    brand: "Hirono Table Lamp",
     img: "https://prod-america-res.popmart.com/default/20250403_155820_656286____scene_hirono-echo-series-table-lamp_accessories_details_popmart-us_____4x269.jpg",
     alt: "Hirono Echo Series - Table Lamp",
   },
@@ -123,7 +123,7 @@ const hironos = [
     name: "Echo Series - Passport Bag",
     price: 25.99,
     inStock: true,
-    brand: "Hirono",
+    brand: "Hirono Passport Bag",
     img: "https://prod-america-res.popmart.com/default/20250403_160446_235292____scene_1_hirono-echo-series-passport-bag_accessories_details_popmart-us_____1200x1200.jpg",
     alt: "Hirono Echo Series - Table Lamp",
   },
@@ -131,7 +131,7 @@ const hironos = [
     name: "Hirono Listening; Saying; Seeing Figure (set)",
     price: 144.99,
     inStock: false,
-    brand: "Hirono",
+    brand: "Hirono Figures Set",
     img: "https://prod-america-res.popmart.com/default/20231102_155828_700367__1200x1200.jpg",
     alt: "Hirono Listening; Saying; Seeing Figure Set",
   },
@@ -139,7 +139,7 @@ const hironos = [
     name: "Echo Series - Phone Case",
     price: 33.99,
     inStock: false,
-    brand: "Hirono",
+    brand: "Hirono Phone Case",
     img: "https://prod-america-res.popmart.com/default/20250403_160239_642642____scene_1hirono-echo-series-phone-case_accessories_details_popmart-us_____1200x1200.jpg",
     alt: "Hirono Echo Series-Phone Case",
   },
@@ -147,7 +147,7 @@ const hironos = [
     name: "Mime Series - Fragrance Blind Box (set)",
     price: 89.94,
     inStock: false,
-    brand: "Hirono",
+    brand: "Hirono Fragrance Blinx Box",
     img: "https://prod-america-res.popmart.com/default/scene_uHwykd9d8D_1200x1200.jpg",
     alt: "Hirono Mime Series-Fragrance Blind Box",
   },
@@ -155,7 +155,7 @@ const hironos = [
     name: "Hirono Bear Vinyl Plush Doll",
     price: 114.99,
     inStock: true,
-    brand: "Hirono",
+    brand: "Hirono Plush",
     img: "https://prod-america-res.popmart.com/default/20250808_175931_649719____3_hirono-bear-vinyl-plush-doll_plush-toys_details_pop-mart-us_____1200x1200.jpg",
     alt: "Hirono Bear Vinyl Plush Doll",
   },
@@ -190,8 +190,8 @@ function addtoCart() {
       const imgSrc = card.querySelector("img").src;
 
       const item = { name, price, imgSrc, quantity: 1 };
-
       const existing = cart.find((product) => product.name === name);
+
       if (existing) {
         existing.quantity += 1;
       } else {
@@ -224,8 +224,8 @@ function displayCart() {
 
     cartContainer.insertAdjacentHTML("beforeend", `
       <div class="cart__item">
-        <p><strong>${item.name}</strong></p>
-        <p>Qty: ${item.quantity}</p>
+        <h5>${item.name}</h5>
+        <h6>Qty: ${item.quantity}</h6>
         <h3>$${item.price.toFixed(2)}</h3>
       </div>
     `);
