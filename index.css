@@ -50,7 +50,7 @@ body {
 #cart-total {
   font-size: 4.5rem;
   font-weight: 800;
-  color: #111;
+  color: #2e2c2b;
   text-align: center;
   margin: 0;
 }
@@ -86,7 +86,7 @@ body {
   display: flex;
   justify-content: space-between;
   font-weight: 600;
-  color: #444;
+  color: #2e2c2b;
   border-bottom: 1px solid #ddd;
   padding-bottom: 0.5rem;
 }
@@ -128,7 +128,7 @@ body {
 .subtotal-amount {
   font-size: 4.5rem;
   font-weight: 800;
-  color: #111;
+  color: #2e2c2b;
   text-align: center;
   margin: 0;
 }
