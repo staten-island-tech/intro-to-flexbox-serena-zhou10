@@ -3,7 +3,7 @@ const hironos = [
     name: "Shelter Series Figures (set)",
     price: 239.88,
     inStock: true,
-    category: "Figure Blind Box",
+    category: "Blind Box",
     brand: "Hirono",
     img: "https://prod-america-res.popmart.com/default/20240711_142219_014105____hirono-shelter-series-figures-blind-boxes-pop-mart-us-scene_1_____1200x1200.jpg",
     alt: "Hirono Shelter Series Figure Set",
@@ -222,9 +222,7 @@ function addtoCart() {
     })
   );
 };
-function removeItem(){
-  //:333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333
-}
+
 addtoCart();
 
 displayCart();
@@ -263,7 +261,7 @@ function showCart() {
 }
 
 function filterByCategory (category) {
-  const cards = document.querySelectorAll(".book-card");
+  const cards = document.querySelectorAll(".hironos-category");
   if (category === cardCategory){
     card.style.display = ""; //contextual
   } else {
@@ -271,6 +269,10 @@ function filterByCategory (category) {
   }
 };
 
-//add a remove btn gngy TOT
+/*add a remove btn gngy TOT
+function removeItem(){
+  :333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333*/
 
 filterByCategory
+
+button.textContent (`Blind Box`)
