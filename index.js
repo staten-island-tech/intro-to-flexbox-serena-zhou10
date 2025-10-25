@@ -260,9 +260,9 @@ function showCart() {
   document.querySelector(".cart").classList.remove("hidden");
 }
 
-function filterByCategory (category) {
+function filterByCategory(category) {
   const cards = document.querySelectorAll(".hironos-category");
-  if (category === cardCategory){
+  if (category === cardCategory) {
     card.style.display = ""; //contextual
   } else {
     card.style.display = "none";
@@ -275,4 +275,4 @@ function removeItem(){
 
 filterByCategory
 
-button.textContent (`Blind Box`)
+button.textContent(`Blind Box`)

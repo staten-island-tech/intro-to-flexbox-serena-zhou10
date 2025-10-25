@@ -186,7 +186,7 @@ p {
   line-height: 1rem;
 }
 
-button {
+.purchase__product {
   font-size: 1.5rem;
   background-color: #2e2c2b;
   font-family: "Montserrat", sans-serif;
@@ -208,6 +208,19 @@ button {
   object-fit: cover;
 }
 
+.filtering {
+  font-size: 1.5rem;
+  color: #2e2c2b;
+  background-color: transparent;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  line-height: 1rem;
+  margin-bottom: 0px;
+  border: 1px solid #9f9b99;
+  color: #333;
+  padding: 10px 20px;
+  cursor: pointer;
+}
 
 
 @media screen and (max-width: 800px) {
