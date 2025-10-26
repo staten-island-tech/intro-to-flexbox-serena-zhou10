@@ -88,7 +88,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  position: sticky;
   top: 0;
   z-index: 1000;
   background-color: #9f9b99;
