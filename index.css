@@ -81,6 +81,22 @@ body {
   border-radius: 9999px;
 }
 
+.filters {
+  width: 100%;
+  margin: 4rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #9f9b99;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+
 /*product + price header*/
 .cart__header {
   display: flex;
@@ -186,7 +202,7 @@ p {
   line-height: 1rem;
 }
 
-.purchase__product {
+.cart_button {
   font-size: 1.5rem;
   background-color: #2e2c2b;
   font-family: "Montserrat", sans-serif;
@@ -210,16 +226,13 @@ p {
 
 .filtering {
   font-size: 1.5rem;
-  color: #2e2c2b;
   background-color: transparent;
   font-family: "Montserrat", sans-serif;
   text-align: center;
   line-height: 1rem;
   margin-bottom: 0px;
   border: 1px solid #9f9b99;
-  color: #333;
-  padding: 10px 20px;
-  cursor: pointer;
+  padding: 10px 70px;
 }
 
 
