@@ -185,7 +185,9 @@ let cart = [];
 
 function inject(hironos) {
   const container = document.querySelector(".container");
-  container.insertAdjacentHTML("beforeend", `<div class = "card">
+  container.insertAdjacentHTML(
+    "beforeend",
+    `<div class = "card">
      <img src=${hironos.img} alt = ${hironos.alt} />
      <h2>${hironos.brand}</h2>
      <h3>${hironos.name}</h3>
@@ -221,7 +223,7 @@ function addtoCart() {
       showCart();
     })
   );
-};
+}
 
 addtoCart();
 
@@ -237,40 +239,54 @@ function displayCart() {
   let subtotal = 0;
   let totalItems = 0;
 
-  cart.forEach(item => {
+  cart.forEach((item) => {
     const itemTotal = item.price * item.quantity;
     subtotal += itemTotal;
     totalItems += item.quantity;
 
-    cartContainer.insertAdjacentHTML("beforeend", `
+    cartContainer.insertAdjacentHTML(
+      "beforeend",
+      `
       <div class="cart__item">
         <h5>${item.name}</h5>
         <h6>Qty: ${item.quantity}</h6>
         <h3>$${item.price.toFixed(2)}</h3>
       </div>
-    `);
+    `
+    );
   });
 
   totalDisplay.textContent = subtotal.toFixed(2);
-  itemCount.textContent = `${totalItems} ${totalItems === 1 ? "Item" : "Items"}`;
-
+  itemCount.textContent = `${totalItems} ${
+    totalItems === 1 ? "Item" : "Items"
+  }`;
 }
 
 function showCart() {
   document.querySelector(".cart").classList.remove("hidden");
 }
 
+function filterbuttons() {
+  const buttons = document.querySelectorAll(".filters");
+  const btnArray = Array.from(buttons);
+  btnArray.forEach((btn) => btn.addEventListener("click", function (event) {}));
+}
+
+function cardCategory() {
+  const category = document.querySelectorAll(".hironos-category");
+}
+
 function filterByCategory(category) {
   const cards = document.querySelectorAll(".hironos-category");
   if (category === cardCategory) {
-    card.style.display = ""; //contextual
+    cards.style.display = ""; //contextual
   } else {
-    card.style.display = "none";
+    cards.style.display = "none";
   }
-};
+}
 
 /*add a remove btn gngy TOT
 function removeItem(){
   :333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333*/
 
-filterByCategory
+filterByCategory();
