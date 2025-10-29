@@ -272,18 +272,22 @@ function filterbuttons() {
   btnArray.forEach((btn) => btn.addEventListener("click", function (event) {}));
 }
 
-function cardCategory() {
-  const category = document.querySelectorAll(".hironos-category");
+function filterByCategory(category) {
+  const filterItem = document.querySelectorAll(".filtering");
+
+  filterItem.forEach((btn) =>
+    btn.addEventListener("click", function (event) {
+      hironos.filter((hironos) => hironos.category === category);
+    })
+  );
 }
 
-function filterByCategory(category) {
-  const cards = document.querySelectorAll(".hironos-category");
-  if (category === cardCategory) {
+/*if (category === cardCategory) {
     cards.style.display = ""; //contextual
   } else {
     cards.style.display = "none";
   }
-}
+}*/
 
 /*add a remove btn gngy TOT
 function removeItem(){
