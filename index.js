@@ -193,7 +193,9 @@ function inject(hironos) {
      <h2>${hironos.brand}</h2>
      <h3>${hironos.name}</h3>
      <p>$${hironos.price}</p>
-     <button class="cart_button">Add to Cart</button>
+     <button class="cart_button" ${!hironos.inStock ? "disabled" : ""}>
+         ${hironos.inStock ? "Add to Cart" : "Out of Stock"}
+       </button>
      </div>`
   );
 }
@@ -259,9 +261,8 @@ function displayCart() {
   });
 
   totalDisplay.textContent = subtotal.toFixed(2);
-  itemCount.textContent = `${totalItems} ${
-    totalItems === 1 ? "Item" : "Items"
-  }`;
+  itemCount.textContent = `${totalItems} ${totalItems === 1 ? "Item" : "Items"
+    }`;
 }
 
 function showCart() {
