@@ -34,3 +34,22 @@ function checkCart (prod){
   checkCart();
   checkCart();
   console.log(cart);*/
+
+
+    /* filterItem.forEach((btn) =>
+    btn.addEventListener("click", function (event) {
+      hironos.filter((hironos) => hironos.category === category);
+      console.log(filterItem);
+    })
+  ); */
+
+  /*if (category === cardCategory) {
+    cards.style.display = ""; //contextual
+  } else {
+    cards.style.display = "none";
+  }
+}*/
+
+/*add a remove btn gngy TOT
+function removeItem(){
+  :333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333*/
