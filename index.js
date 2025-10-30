@@ -183,11 +183,12 @@ const hironos = [
 
 let cart = [];
 
+/*products*/
 function inject(hironos) {
   const container = document.querySelector(".container");
   container.insertAdjacentHTML(
     "beforeend",
-    `<div class = "card">
+    `<div class = "card" data-cat=${hironos.category}>
      <img src=${hironos.img} alt = ${hironos.alt} />
      <h2>${hironos.brand}</h2>
      <h3>${hironos.name}</h3>
@@ -227,6 +228,7 @@ function addtoCart() {
 
 addtoCart();
 
+/*cart*/
 displayCart();
 
 function displayCart() {
@@ -266,21 +268,38 @@ function showCart() {
   document.querySelector(".cart").classList.remove("hidden");
 }
 
-function filterbuttons() {
-  const buttons = document.querySelectorAll(".filters");
-  const btnArray = Array.from(buttons);
-  btnArray.forEach((btn) => btn.addEventListener("click", function (event) {}));
-}
-
+/*filtering*/
 function filterByCategory(category) {
   const filterItem = document.querySelectorAll(".filtering");
+  const cards = document.querySelectorAll(".card")
+  cards.forEach((card) => {
+    if (selectedCategory === "all" || card.Category === selectedCategory){
+      card.style.display = '';
+    } else {
+      card.style.display = "none";
+    };
+  });
+};
 
-  filterItem.forEach((btn) =>
+  /* filterItem.forEach((btn) =>
     btn.addEventListener("click", function (event) {
       hironos.filter((hironos) => hironos.category === category);
+      console.log(filterItem);
     })
-  );
+  ); */
+
+function setupFilterButtons() {
+  const filterButtons = document.querySelectorAll(".filtering");
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", function (event) {
+      console.log(event.target.textContent);
+      filterByCategory(event.target.textContent);
+      addtoCart();
+    });
+  });
 }
+
+filterByCategory("Personal Items");
 
 /*if (category === cardCategory) {
     cards.style.display = ""; //contextual
@@ -292,5 +311,3 @@ function filterByCategory(category) {
 /*add a remove btn gngy TOT
 function removeItem(){
   :333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333*/
-
-filterByCategory();
