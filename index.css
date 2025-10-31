@@ -248,21 +248,6 @@ p {
   opacity: 0.6;
 }
 
-.remove-btn {
-  font-size: 1rem;
-  background-color: #2e2c2b;
-  font-family: "Montserrat", sans-serif;
-  padding: 5px;
-  text-align: center;
-  line-height: 1rem;
-  margin-right: 15px;
-  margin-bottom: 0px;
-  border-radius: 0.5rem;
-  width: 8rem;
-  align-self: flex-end;
-  margin-top: auto
-}
-
 @media screen and (max-width: 800px) {
   .card {
     width: 100%;
@@ -281,4 +266,7 @@ p {
   .container {
     flex-direction: column;
   }
+}
+button:hover{
+  cursor: pointer;
 }
