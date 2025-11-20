@@ -267,6 +267,3 @@ p {
     flex-direction: column;
   }
 }
-button:hover{
-  cursor: pointer;
-}
